@@ -1,4 +1,4 @@
-def CONTAINER_NAME="jenkins_container"
+def CONTAINER_NAME="jenkins-pipeline"
 def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="ssumathe"
 def HTTP_PORT="8090"
@@ -32,7 +32,7 @@ node {
     }
 
     stage('Image Build'){
-        imageBuild(CONTAINER_NAME)
+        imageBuild(CONTAINER_NAME, CONTAINER_TAG)
     }
 
     stage('Push to Docker Registry'){
