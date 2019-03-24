@@ -1,7 +1,7 @@
 def CONTAINER_NAME="app1-try1"
 def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="ssumathe"
-def HTTP_PORT="8090"
+def HTTP_PORT="8091"
 
 node {
 
